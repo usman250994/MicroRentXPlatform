@@ -109,6 +109,7 @@ Nestjs-microservices_peer_2_peer_rental_project/
 ## 🤝 Contributing
 
 This is a dummy project intended for experimentation and learning. Contributions, feedback, and forks are welcome!
+For testing purpose happy to share postman collection too for each service. ;)
 
 ---
 
