@@ -46,7 +46,6 @@ export class FeedbackService {
       },
       select: ['rating'],
     });
-    console.log('rating', rating);
     const sum = rating.reduce((a, b) => Number(a) + Number(b), 0);
     const avg = sum / rating.length || 0;
     return avg;

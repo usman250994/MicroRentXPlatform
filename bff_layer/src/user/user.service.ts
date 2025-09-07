@@ -34,18 +34,13 @@ export class UserService {
   }
 
   public async login(dto: any) {
-    console.log('login');
     const resp = await this.findOneByCondition(dto);
-    console.log('par step 1 of login');
     return this.authenticationService.authorize(resp);
-    console.log('par step 2 of login');
+
   }
 
   @UseFilters(MyExceptionFilter)
   async findOneByCondition(dto: any): Promise<any> {
-    //do we need exception here
-    // return this.exceptionhandler.tryAndCatch(
-    console.log('inside step 1 of login');
     const h = await lastValueFrom(
       this.userMicroservice.send(
         UserConsants.topics.FIND_ONE_BY_CONDITION,
@@ -53,10 +48,7 @@ export class UserService {
       ),
     );
     if (h instanceof RpcException) {
-      console.log('ae bahai yeh hai', h);
       throw h;
-    } else {
-      console.log('2323', h);
     }
     return h;
   }

@@ -18,11 +18,13 @@ export class AuthenticationService {
   ) {}
 
   async validateUser(email: string, password: string): Promise<any> {
-    console.log('valide user chala ha');
+
     const userLoginResponse = await this.userService.findOneByCondition({
       email: email,
     });
 
+    // NOTE: temporarily disabled for testing purpose only
+    
     // const userPassword = await this.passwordService.compareHash(
     //   password,
     //   userLoginResponse.password,
@@ -34,7 +36,7 @@ export class AuthenticationService {
   }
 
   authorize(signupUserResponseDto: any): any {
-    console.log('in step  2 of login');
+
     const jwtSignPayload = {
       email: signupUserResponseDto.email,
       id: signupUserResponseDto.id,

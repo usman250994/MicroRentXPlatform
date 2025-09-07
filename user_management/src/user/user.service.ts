@@ -55,8 +55,6 @@ export class UserService {
   async findOneByCondition(
     findOneByCondition: any,
   ): Promise<RpcException | userObject> {
-    console.log('just checking k aya yaha k nahi 43');
-    throw new RpcException('Cannot find By Cond2ition.');
     const user = await this.userRepository.findOneBy(findOneByCondition);
     if (!user) throw new NotFoundException();
     return user;
