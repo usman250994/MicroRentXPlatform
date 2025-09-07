@@ -1,5 +1,5 @@
 <div align="center">
-	<h1>🚀 Peer-to-Peer Rental Microservices Platform</h1>
+	<h1>🚀 MicroRentXPlatform is a peer-to-peer Rental Microservices Platform boiler plate</h1>
 	<p>
 		<img src="https://nestjs.com/img/logo_text.svg" alt="NestJS" width="180"/>
 		<img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg" alt="Kafka" width="120"/>
