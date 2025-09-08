@@ -171,3 +171,8 @@ npm run start:dev
 	<img src="https://nestjs.com/img/logo-small.svg" width="40"/>
 	<b>Made with ❤️ using NestJS, Kafka, and Docker</b>
 </div>
+
+
+Medium arcticle
+[peer to peer rental platform](https://medium.com/@mani9418/building-a-peer-to-peer-rental-platform-with-event-driven-microservices-open-source-8bfe4ff2032c)
+
