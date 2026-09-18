@@ -173,6 +173,6 @@ npm run start:dev
 </div>
 
 
-Medium arcticle
+Medium article
 [peer to peer rental platform](https://medium.com/@mani9418/building-a-peer-to-peer-rental-platform-with-event-driven-microservices-open-source-8bfe4ff2032c)
 
